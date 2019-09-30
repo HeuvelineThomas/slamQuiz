@@ -21,7 +21,7 @@ class DefaultController extends AbstractController
     public function user() {
         $last_name = "CHIRAC";
         $first_name = "Jacques";
-        return $this->render('default/user.html.twig', [
+        return $this->render('user/user.html.twig', [
             'first_name'=>$first_name,
             'last_name' =>$last_name,
         ]);
