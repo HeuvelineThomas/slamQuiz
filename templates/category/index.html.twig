@@ -1,17 +1,17 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Category index{% endblock %}
+{% block title %}{{'Category index'|trans}}{% endblock %}
 
 {% block body %}
-    <h1>Category index</h1>
+    <h1> {{'Category index'|trans}}</h1>
 
     <table class="table table-hover table">
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Shortname</th>
-                <th>Longname</th>
-                <th>action</th>
+                <th> {{ 'Shortname'|trans }}</th>
+                <th> {{ 'Longname'|trans }}</th>
+                <th> {{ 'action'|trans }}</th>
             </tr>
         </thead>
         <tbody>
@@ -22,11 +22,11 @@
                 <td>{{ category.longname }}</td>
                 
                 <td>
-                    <a class="btn btn-secondary" href="{{ path('category_show', {'id': category.id}) }}"><i class="fas fa-eye"></i> show</a>
+                    <a class="btn btn-secondary" href="{{ path('category_show', {'id': category.id}) }}"><i class="fas fa-eye"></i>  {{ 'Show'|trans }}</a>
 
-                    <a class="btn btn-secondary" href="{{ path('category_edit', {'id': category.id}) }}"><i class="fas fa-edit"></i> edit</a>
+                    <a class="btn btn-secondary" href="{{ path('category_edit', {'id': category.id}) }}"><i class="fas fa-edit"></i>  {{ 'Edit'|trans }}</a>
             
-                    <a class="btn btn-danger" href="{{ path('category_delete', {'id': category.id}) }}"><i class="fas fa-trash-alt"></i> Delete</a>
+                    <a class="btn btn-danger" href="{{ path('category_delete', {'id': category.id}) }}"><i class="fas fa-trash-alt"></i>  {{ 'Delete'|trans }}</a>
                 </td>
             </tr>
         {% else %}
@@ -37,5 +37,5 @@
         </tbody>
     </table>
 
-    <a class="btn btn-primary" href="{{ path('category_new') }}"><i class="fas fa-plus"></i> Create new</a>
+    <a class="btn btn-primary" href="{{ path('category_new') }}"><i class="fas fa-plus"></i> {{'Create new'|trans }}</a>
 {% endblock %}
