@@ -93,6 +93,10 @@
         <source>Log out</source>
         <target>Se déconnecter</target>
       </trans-unit>
+      <trans-unit id="u3I07BJ" resname="Register">
+        <source>Register</source>
+        <target>Inscription</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
