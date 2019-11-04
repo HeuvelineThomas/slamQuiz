@@ -1,10 +1,10 @@
 #slamQuiz
 ## ![alt text](C:\HT\symfony\slamQuiz\assets\screenshot_home.png)
 ## Installation
-Dans une invite de commande créez-vous un espace de stockage (temp par exemple)
+Open a command prompt and create a storage space (temp for example)
 * cd temp
 * git clone https://github.com/HeuvelineThomas/slamQuiz.git
-Un dossier slamQuiz sera alors créé
+A folder slamQuiz will be created
 * cd slamQuiz
 * composer install
-Le dossier vendor va se créer, lorsque ceci est fini vous avez toutes les ressources du projet.
+The vendor folder will be created, after that you have all the ressources of the project.

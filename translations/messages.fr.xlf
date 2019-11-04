@@ -89,9 +89,37 @@
         <source>This projet is an online MCQ for students in BTS SIO.</source>
         <target>Ce projet est un QCM en ligne destiné aux étudiants de BTS SIO.</target>
       </trans-unit>
-      <trans-unit id="huZ4ZCB" resname="A MCQ application for students">
-        <source>A MCQ application for students</source>
-        <target>Une application de QCM pour étudiants</target>
+      <trans-unit id="lFeK2Qo" resname="You need to verify your student performance ?">
+        <source>You need to verify your student performance ?</source>
+        <target>Vous avez besoin de vérifier la performance de vos élèves ?</target>
+      </trans-unit>
+      <trans-unit id="KEV8GLJ" resname="This is the tool you need ! SlamQuiz is a software of online MCQ. A simple and free tool">
+        <source>This is the tool you need ! SlamQuiz is a software of online MCQ. A simple and free tool</source>
+        <target>Voici l'outil qu'il vous faut. SlamQuiz est un logiciel de QCM en ligne. Un outil simple et gratuit.</target>
+      </trans-unit>
+      <trans-unit id="VpfQPa7" resname="Features">
+        <source>Features</source>
+        <target>Fonctionnalités</target>
+      </trans-unit>
+      <trans-unit id="EGnh83M" resname="Interactive content">
+        <source>Interactive content</source>
+        <target>Contenu interactif</target>
+      </trans-unit>
+      <trans-unit id="rb.vIHt" resname="Marked automatically">
+        <source>Marked automatically</source>
+        <target>Notation automatique</target>
+      </trans-unit>
+      <trans-unit id="JeoCuLD" resname="Real time activity monitoring (get the studient results by mail)">
+        <source>Real time activity monitoring (get the studient results by mail)</source>
+        <target>Suivi d'activité en temps réel (recevez les résultats des élèves par email)</target>
+      </trans-unit>
+      <trans-unit id="zECYM4M" resname="Test your studients thanks a smartphone and deliver live score during a presentation">
+        <source>Test your studients thanks a smartphone and deliver live score during a presentation</source>
+        <target>Testez vos élèves via un smartphone et fournissez des résultats en direct lors d'une présentation</target>
+      </trans-unit>
+      <trans-unit id="TToTS5c" resname="Licence : It is a free software, you can copy and modify the code">
+        <source>Licence : It is a free software, you can copy and modify the code</source>
+        <target>Licence : C'est un logiciel libre, vous pouvez copier et modifier le code.</target>
       </trans-unit>
     </body>
   </file>
