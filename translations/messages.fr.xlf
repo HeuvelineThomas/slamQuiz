@@ -85,6 +85,14 @@
         <source>Category</source>
         <target>Catégorie</target>
       </trans-unit>
+      <trans-unit id="nd6kWyC" resname="This projet is an online MCQ for students in BTS SIO.">
+        <source>This projet is an online MCQ for students in BTS SIO.</source>
+        <target>Ce projet est un QCM en ligne destiné aux étudiants de BTS SIO.</target>
+      </trans-unit>
+      <trans-unit id="huZ4ZCB" resname="A MCQ application for students">
+        <source>A MCQ application for students</source>
+        <target>Une application de QCM pour étudiants</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
