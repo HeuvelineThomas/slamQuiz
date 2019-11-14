@@ -24,9 +24,9 @@
                 <td>
                     <a class="btn btn-secondary" href="{{ path('category_show', {'id': category.id}) }}"><i class="fas fa-eye"></i>  {{ 'Show'|trans }}</a>
 
-                    <a class="btn btn-secondary" href="{{ path('category_edit', {'id': category.id}) }}"><i class="fas fa-edit"></i>  {{ 'Edit'|trans }}</a>
+                    {% if is_granted('ROLE_ADMIN') %}<a class="btn btn-warning" href="{{ path('category_edit', {'id': category.id}) }}"><i class="fas fa-edit"></i>  {{ 'Edit'|trans }}</a>{% endif %}
             
-                    <a class="btn btn-danger" href="{{ path('category_delete', {'id': category.id}) }}"><i class="fas fa-trash-alt"></i>  {{ 'Delete'|trans }}</a>
+                    {% if is_granted('ROLE_SUPER_ADMIN') %}<a class="btn btn-danger" href="{{ path('category_delete', {'id': category.id}) }}"><i class="fas fa-trash-alt"></i>  {{ 'Delete'|trans }}</a>{% endif %}
                 </td>
             </tr>
         {% else %}
@@ -37,5 +37,5 @@
         </tbody>
     </table>
 
-    <a class="btn btn-primary" href="{{ path('category_new') }}"><i class="fas fa-plus"></i> {{'Create new'|trans }}</a>
+    {% if is_granted('ROLE_ADMIN') %}<a class="btn btn-primary" href="{{ path('category_new') }}"><i class="fas fa-plus"></i> {{'Create new'|trans }}</a>{% endif %}
 {% endblock %}

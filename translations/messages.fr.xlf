@@ -120,6 +120,17 @@
       <trans-unit id="TToTS5c" resname="Licence : It is a free software, you can copy and modify the code">
         <source>Licence : It is a free software, you can copy and modify the code</source>
         <target>Licence : C'est un logiciel libre, vous pouvez copier et modifier le code.</target>
+      <trans-unit id="v9QCsvb" resname="Sign in">
+        <source>Sign in</source>
+        <target>Se connecter</target>
+      </trans-unit>
+      <trans-unit id="SWFhRVF" resname="Log out">
+        <source>Log out</source>
+        <target>Se déconnecter</target>
+      </trans-unit>
+      <trans-unit id="u3I07BJ" resname="Register">
+        <source>Register</source>
+        <target>Inscription</target>
       </trans-unit>
     </body>
   </file>
