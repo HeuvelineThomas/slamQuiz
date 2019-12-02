@@ -68,7 +68,6 @@ class SecurityControllerTest extends WebTestCase
      */
     public function testNotShowCategory()
     {
-    
         // Request /category 
         $this->client->request('GET', '/category');
 
@@ -153,7 +152,6 @@ class SecurityControllerTest extends WebTestCase
 
             $this->assertEquals(403, $this->client->getResponse()->getStatusCode());
         }
-   
 
     # 6) Créer une action testSecuredRoleAdmin() dans SecurityControllerTest : 
 
@@ -178,5 +176,4 @@ class SecurityControllerTest extends WebTestCase
             */
             $this->assertContains('<h1>Create new Category</h1>', $this->client->getResponse()->getContent());
         }
-
 }
