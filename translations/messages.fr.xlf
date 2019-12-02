@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="fr" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="588_9PF" resname="Password">
+        <source>Password</source>
+        <target>Mot de passe</target>
+      </trans-unit>
+      <trans-unit id="u3I07BJ" resname="Register">
+        <source>Register</source>
+        <target>Connexion</target>
+      </trans-unit>
+      <trans-unit id="SWFhRVF" resname="Log out">
+        <source>Log out</source>
+        <target>Se déconnecter</target>
+      </trans-unit>
+      <trans-unit id="v9QCsvb" resname="Sign in">
+        <source>Sign in</source>
+        <target>Se connecter</target>
+      </trans-unit>
+      <trans-unit id="ScJmuqq" resname="Search">
+        <source>Search</source>
+        <target>Rechercher</target>
+      </trans-unit>
+      <trans-unit id="xo05DSt" resname="Category index">
+        <source>Category index</source>
+        <target>Catégorie index</target>
+      </trans-unit>
+      <trans-unit id="JDGJ6tc" resname="Shortname">
+        <source>Shortname</source>
+        <target>Nom court</target>
+      </trans-unit>
+      <trans-unit id="9iiazAv" resname="Longname">
+        <source>Longname</source>
+        <target>Nom long</target>
+      </trans-unit>
+      <trans-unit id="vZOMaI9" resname="action">
+        <source>action</source>
+        <target>Action</target>
+      </trans-unit>
+      <trans-unit id="DfbxytN" resname="Show">
+        <source>Show</source>
+        <target>Aperçu</target>
+      </trans-unit>
+      <trans-unit id="RkxP.QG" resname="Edit">
+        <source>Edit</source>
+        <target>Modifier</target>
+      </trans-unit>
+      <trans-unit id="4tClSWj" resname="Delete">
+        <source>Delete</source>
+        <target>Supprimer</target>
+      </trans-unit>
+      <trans-unit id="nz33U6Q" resname="Create new">
+        <source>Create new</source>
+        <target>Ajouter</target>
+      </trans-unit>
+      <trans-unit id="Ogh45Pp" resname="New Category">
+        <source>New Category</source>
+        <target>Nouvelle catégorie</target>
+      </trans-unit>
+      <trans-unit id="W6joEsF" resname="Create new Category">
+        <source>Create new Category</source>
+        <target>Créer une nouvelle catégorie</target>
+      </trans-unit>
+      <trans-unit id="U0M9PNE" resname="back to list">
+        <source>back to list</source>
+        <target>Retour à la liste</target>
+      </trans-unit>
+      <trans-unit id="KSwG8AR" resname="Category">
+        <source>Category</source>
+        <target>Catégorie</target>
+      </trans-unit>
+      <trans-unit id="lFeK2Qo" resname="You need to verify your student performance ?">
+        <source>You need to verify your student performance ?</source>
+        <target>Vous avez besoin de vérifier la performance de vos élèves ?</target>
+      </trans-unit>
+      <trans-unit id="KEV8GLJ" resname="This is the tool you need ! SlamQuiz is a software of online MCQ. A simple and free tool">
+        <source>This is the tool you need ! SlamQuiz is a software of online MCQ. A simple and free tool</source>
+        <target>Voici l'outil qu'il vous faut. SlamQuiz est un logiciel de QCM en ligne. Un outil simple et gratuit</target>
+      </trans-unit>
+      <trans-unit id="VpfQPa7" resname="Features">
+        <source>Features</source>
+        <target>Fonctionnalités</target>
+      </trans-unit>
+      <trans-unit id="EGnh83M" resname="Interactive content">
+        <source>Interactive content</source>
+        <target>Contenu interactif</target>
+      </trans-unit>
+      <trans-unit id="rb.vIHt" resname="Marked automatically">
+        <source>Marked automatically</source>
+        <target>Notation automatique</target>
+      </trans-unit>
+      <trans-unit id="JeoCuLD" resname="Real time activity monitoring (get the studient results by mail)">
+        <source>Real time activity monitoring (get the studient results by mail)</source>
+        <target>Suivi d'activité en temps réel (recevez les résultats des élèves par email)</target>
+      </trans-unit>
+      <trans-unit id="zECYM4M" resname="Test your studients thanks a smartphone and deliver live score during a presentation">
+        <source>Test your studients thanks a smartphone and deliver live score during a presentation</source>
+        <target>Testez vos élèves via un smartphone et fournissez des résultats en direct lors d'une présentation</target>
+      </trans-unit>
+      <trans-unit id="TToTS5c" resname="Licence : It is a free software, you can copy and modify the code">
+        <source>Licence : It is a free software, you can copy and modify the code</source>
+        <target>Licence : C'est un logiciel libre, vous pouvez copier et modifier le code.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
