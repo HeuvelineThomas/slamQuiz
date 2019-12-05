@@ -20,7 +20,7 @@ class Category
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=50, unique=true)
+     * @ORM\Column(type="string", length=50)
      */
     private $shortname;
 

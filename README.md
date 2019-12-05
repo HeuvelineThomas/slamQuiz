@@ -12,4 +12,5 @@ cd slamQuiz
 composer install  
 ```
 *The vendor folder will be created, after that you have all the ressources of the project.*
+https://travis-ci.org/HeuvelineThomas/slamQuiz.svg?branch=master
 
