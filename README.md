@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/HeuvelineThomas/slamQuiz.svg?branch=master)]
+![Build Status](https://travis-ci.org/HeuvelineThomas/slamQuiz.svg?branch=master)
 
 #slamQuiz
 ![](https://raw.githubusercontent.com/HeuvelineThomas/slamQuiz/develop/assets/screenshot_home.png)
