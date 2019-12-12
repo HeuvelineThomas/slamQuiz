@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping\Table;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\CategoryRepository")
- * @ORM\Table(name="tbl_Category")
+ * @ORM\Table(name="tbl_category")
  */
 class Category
 {

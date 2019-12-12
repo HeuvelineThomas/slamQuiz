@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/HeuvelineThomas/slamQuiz.svg?branch=master)](https://travis-ci.org/HeuvelineThomas/slamQuiz)
+
 #slamQuiz
 ![](https://raw.githubusercontent.com/HeuvelineThomas/slamQuiz/develop/assets/screenshot_home.png)
 ## Installation
@@ -12,4 +14,5 @@ cd slamQuiz
 composer install  
 ```
 *The vendor folder will be created, after that you have all the ressources of the project.*
+
 
