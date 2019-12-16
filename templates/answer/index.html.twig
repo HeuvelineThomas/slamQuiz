@@ -21,8 +21,11 @@
                 <td>{{ answer.text }}</td>
                 <td>{{ answer.correct ? 'Yes' : 'No' }}</td>
                 <td>
-                    <a href="{{ path('answer_show', {'id': answer.id}) }}">show</a>
-                    <a href="{{ path('answer_edit', {'id': answer.id}) }}">edit</a>
+                {% if is_granted('ROLE_ADMIN') %}
+                    <a href="{{ path('answer_show', {'id': answer.id}) }}">{{'Show'|trans}}</a>
+                    <a href="{{ path('answer_edit', {'id': answer.id}) }}">{{'Edit'|trans}}</a>
+                {% endif %}
+                    
                 </td>
             </tr>
         {% else %}

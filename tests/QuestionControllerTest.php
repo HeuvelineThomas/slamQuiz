@@ -9,9 +9,8 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken;
 use Symfony\Component\DomCrawler\Crawler;
 
-class AnswerControllerTest extends WebTestCase
+class QuestionControllerTest extends WebTestCase
 {
-
     private $client = null;
 
     public function setUp()
@@ -40,21 +39,21 @@ class AnswerControllerTest extends WebTestCase
 
     }
 
-    /**
+      /**
      * Check the logged-on user's path access with the ROLE_USER role
      */
     public function testSecuredRoleUser()
     {
         $this->logIn('user', 'ROLE_USER');
-        $crawler = $this->client->request('GET', '/answer/new/');
-        
-        // Asserts that /answer/new path exists and don't return an error
+        $crawler = $this->client->request('GET', '/question/2/new');
+
+        // Asserts that /question path exists and don't return an error
         /* 
         Ecrire ici le code pour vérifier que, si l'utilisateur est connecté avec le rôle ROLE_USER, 
-        la requête '/answer/new' affiche que l'accès est interdit
+        la requête '/question/new' affiche que l'accès est interdit
         c'est à dire affirmer que le code de statut de la réponse est égale à 403 (Response::HTTP_FORBIDDEN)
         */
-        $this->assertEquals(301, $this->client->getResponse()->getStatusCode());
+        $this->assertEquals(403, $this->client->getResponse()->getStatusCode());
     }
 
      /**
@@ -63,21 +62,19 @@ class AnswerControllerTest extends WebTestCase
     public function testSecuredRoleAdmin()
     {
         $this->logIn('admin', 'ROLE_ADMIN');
-        $crawler = $this->client->request('GET', '/answer/new');
+        $crawler = $this->client->request('GET', '/question/2/new');
 
-        // Asserts that /answer/new path exists and don't return an error
+        // Asserts that /question/new path exists and don't return an error
         /* 
         Ecrire ici le code pour vérifier que, si l'utilisateur est connecté avec le rôle ROLE_ADMIN, 
-        la requête '/answer/new' renvoie une réponse HTTP avec un code de statut égale à 200 (Response::HTTP_OK)
+        la requête '/question/new' renvoie une réponse HTTP avec un code de statut égale à 200 (Response::HTTP_OK)
         */
-
         $this->assertEquals(200, $this->client->getResponse()->getStatusCode());
-        
-        // Asserts that the response content contains 'Create new answer' in 'h1' tag
+        // Asserts that the response content contains 'Create new question' in 'h1' tag
         /* 
         Ecrire ici le code pour vérifier que, si l'utilisateur est connecté avec le rôle ROLE_ADMIN, 
-        la requête '/answer/new' renvoie 'Create new answer' dans la balise 'h1'
+        la requête '/question/new' renvoie 'Create new question' dans la balise 'h1'
         */
-        $this->assertContains('<h1>Create new answer</h1>', $this->client->getResponse()->getContent());
+        $this->assertContains('<h1>Create new Question</h1>', $this->client->getResponse()->getContent());
     }
 }

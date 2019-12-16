@@ -28,10 +28,10 @@ class Answer
     private $correct;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Question", inversedBy="answer")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Question", inversedBy="answers")
      * @ORM\JoinColumn(nullable=false)
      */
-    private $answer;
+    private $question;
 
     public function getId(): ?int
     {
@@ -62,14 +62,14 @@ class Answer
         return $this;
     }
 
-    public function getAnswer(): ?Question
+    public function getQuestion(): ?Question
     {
-        return $this->answer;
+        return $this->question;
     }
 
-    public function setAnswer(?Question $answer): self
+    public function setQuestion(?Question $question): self
     {
-        $this->answer = $answer;
+        $this->question = $question;
 
         return $this;
     }

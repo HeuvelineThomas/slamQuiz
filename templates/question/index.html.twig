@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{'Question index'|trans}}{% endblock %}
+
+{% block body %}
+    <h1>{{'Question index'|trans}}</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>{{'Id'|trans}}</th>
+                <th>{{'Text'|trans}}</th>
+                <th>{{'actions'|trans}}</th>
+                <th>{{'Categories'|trans}}|</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for question in questions %}
+            <tr>
+                <td>{{ question.id }}</td>
+                <td>{{ question.text }}</td>
+                
+                <td>{% for categorie in question.categories %}
+                    {{ categorie.shortname }}
+                {% endfor %}</td>
+                
+                <td>
+
+
+                {% if is_granted('ROLE_ADMIN') %}
+                    <a href="{{ path('question_show', {'id': question.id}) }}">{{'Show'|trans}}</a>
+                    <a href="{{ path('question_edit', {'id': question.id}) }}">{{'Edit'|trans}}</a>
+                {% endif %}
+
+                
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">{{'no records found'|trans}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    {{'Create new question with'|trans}}
+    <a href="{{ path('question_new', {'nb': 2}) }}"> {{'2 answers'|trans}}</a>,
+    <a href="{{ path('question_new', {'nb': 3}) }}"> {{'3 answers'|trans}}</a>
+    or <a href="{{ path('question_new', {'nb': 4}) }}"> {{'4 answers'|trans}}</a>
+
+{% endblock %}
