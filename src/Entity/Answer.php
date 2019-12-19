@@ -29,7 +29,6 @@ class Answer
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Question", inversedBy="answers")
-     * @ORM\JoinColumn(nullable=false)
      */
     private $question;
 

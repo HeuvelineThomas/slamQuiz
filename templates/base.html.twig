@@ -28,20 +28,11 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#">{{ 'Home'|trans }}<span class="sr-only">(current)</span></a>
                 </li>
+               
                 <li class="nav-item">
-                    <a class="nav-link" href="#">{{ 'Link'|trans }}</a>
+                    <a class="nav-link" href="{{ path('app_register') }}">{{ 'Register'|trans }}</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">{{ 'Disabled'|trans }}</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">{{ 'Dropdown'|trans }}</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="#">{{ 'Action'|trans }}</a>
-                    <a class="dropdown-item" href="#">{{ 'Another action'|trans }}</a>
-                    <a class="dropdown-item" href="#">{{ 'Something else here'|trans }}</a>
-                    </div>
-                </li>
+    
                 {% if is_granted('ROLE_ADMIN') %}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ path('answer_index') }}">{{ 'Answer'|trans }}</a>
@@ -53,10 +44,6 @@
                         <a class="nav-link" href="{{ path('question_index') }}">{{ 'Question'|trans }}</a>
                     </li>
                 {% endif %}
-
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ path('app_register') }}">{{ 'Register'|trans }}</a>
-                </li>
         
                 {% if app.user %} 
                     <li class="nav-item">
