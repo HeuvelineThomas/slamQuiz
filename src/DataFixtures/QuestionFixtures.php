@@ -13,9 +13,9 @@ class QuestionFixtures extends Fixture
     {
         // $product = new Product();
         // $manager->persist($product);
-        $question = new question();
-        $question->setText('Comment tu vas ?');
-        $manager->persist($question);
+        // $question = new question();
+        // $question->setText('Comment tu vas ?');
+        // $manager->persist($question);
 
 
         // $answer = new answer();
@@ -30,8 +30,8 @@ class QuestionFixtures extends Fixture
         // $answer->setQuestion($question);
         // $manager->persist($answer);
 
-        $manager->persist($question);
-        // $manager->persist($answer);
-        $manager->flush();
+        // $manager->persist($question);
+        // // $manager->persist($answer);
+        // $manager->flush();
     }
 }
