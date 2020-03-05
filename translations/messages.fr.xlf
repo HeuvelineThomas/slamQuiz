@@ -11,7 +11,7 @@
       </trans-unit>
       <trans-unit id="u3I07BJ" resname="Register">
         <source>Register</source>
-        <target>Connexion</target>
+        <target>Inscription</target>
       </trans-unit>
       <trans-unit id="SWFhRVF" resname="Log out">
         <source>Log out</source>
@@ -161,57 +161,57 @@
         <source>Dropdown</source>
         <target>Déroulant</target>
       </trans-unit>
-      <trans-unit id="ZM.xMZ02" resname="Action">
+      <trans-unit id="ZM.xMZ0" resname="Action">
         <source>Action</source>
         <target>Action</target>
       </trans-unit>
-      <trans-unit id="wvqtrho2" resname="Another action">
+      <trans-unit id="wvqtrho" resname="Another action">
         <source>Another action</source>
         <target>Autre action</target>
       </trans-unit>
-      <trans-unit id="RDzxF2T2" resname="Something else here">
+      <trans-unit id="RDzxF2T" resname="Something else here">
         <source>Something else here</source>
         <target>Autre chose ici</target>
       </trans-unit>
-      <trans-unit id="KJr.ErB2" resname="Question">
+      <trans-unit id="KJr.ErB" resname="Question">
         <source>Question</source>
         <target>Question</target>
       </trans-unit>
-      <trans-unit id="nibTd3r2" resname="Edit Question">
+      <trans-unit id="nibTd3r" resname="Edit Question">
         <source>Edit Question</source>
         <target>Modifier la question</target>
       </trans-unit>
-      <trans-unit id="2p1awvt2" resname="Question index">
+      <trans-unit id="2p1awvt" resname="Question index">
         <source>Question index</source>
         <target>Question index</target>
       </trans-unit>
-      <trans-unit id="uLHYlMa2" resname="Categories">
-        <source>Categories</source>
-        <target>Categories</target>
-      </trans-unit>
-      <trans-unit id="ldY1tXH2" resname="Create new question with">
+      <trans-unit id="ldY1tXH" resname="Create new question with">
         <source>Create new question with</source>
         <target>Créer une nouvelle question avec</target>
       </trans-unit>
-      <trans-unit id="5VzXa2Z2" resname="2 answers">
+      <trans-unit id="5VzXa2Z" resname="2 answers">
         <source>2 answers</source>
         <target>2 réponses</target>
       </trans-unit>
-      <trans-unit id="l_USnPv2" resname="3 answers">
+      <trans-unit id="l_USnPv" resname="3 answers">
         <source>3 answers</source>
         <target>3 réponses</target>
       </trans-unit>
-      <trans-unit id="pCS30P32" resname="4 answers">
+      <trans-unit id="pCS30P3" resname="4 answers">
         <source>4 answers</source>
         <target>4 réponses</target>
       </trans-unit>
-      <trans-unit id="vvWTZCZ2" resname="New question">
+      <trans-unit id="vvWTZCZ" resname="New question">
         <source>New question</source>
         <target>Nouvelle question</target>
       </trans-unit>
-      <trans-unit id="E2JqnxS2" resname="Create new Question">
+      <trans-unit id="E2JqnxS" resname="Create new Question">
         <source>Create new Question</source>
         <target>Créer une nouvelle question</target>
+      </trans-unit>
+      <trans-unit id="A6p9wWe" resname="Quiz">
+        <source>Quiz</source>
+        <target>Questionnaire</target>
       </trans-unit>
     </body>
   </file>
