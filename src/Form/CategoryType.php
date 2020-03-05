@@ -13,6 +13,7 @@ class CategoryType extends AbstractType
     {
         $builder
             ->add('shortname')
+            ->add('quizzes')
             // ->add('longname')
         ;
     }

@@ -3,9 +3,12 @@
 namespace App\Form;
 
 use App\Entity\Quiz;
+use App\Entity\Category;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 
 class QuizType extends AbstractType
 {
@@ -17,6 +20,12 @@ class QuizType extends AbstractType
             ->add('number_of_questions')
             ->add('active')
         ;
+
+        $builder->add('categories', EntityType::class, array(
+            'class' => Category::class,
+            'choice_label' => 'longname',
+            'multiple' => true
+        ));
     }
 
     public function configureOptions(OptionsResolver $resolver)

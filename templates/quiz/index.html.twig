@@ -8,14 +8,14 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Title</th>
-                <th>Summary</th>
-                <th>Number_of_questions</th>
-                <th>Active</th>
-                <th>Created_at</th>
-                <th>Updated_at</th>
-                <th>actions</th>
+                <th>{{ 'Id'|trans }}</th>
+                <th>{{ 'Title'|trans }}</th>
+                <th>{{ 'Summary'|trans }}</th>
+                <th>{{ 'Number_of_questions'|trans }}</th>
+                <th>{{ 'Active'|trans }}</th>
+                <th>{{ 'Created_at'|trans }}</th>
+                <th>{{ 'Updated_at'|trans }}</th>
+                <th>{{ 'actions'|trans }}</th>
             </tr>
         </thead>
         <tbody>
@@ -29,17 +29,18 @@
                 <td>{{ quiz.createdAt ? quiz.createdAt|date('Y-m-d H:i:s') : '' }}</td>
                 <td>{{ quiz.updatedAt ? quiz.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
                 <td>
-                    <a href="{{ path('quiz_show', {'id': quiz.id}) }}">show</a>
-                    <a href="{{ path('quiz_edit', {'id': quiz.id}) }}">edit</a>
+                    <a class="btn btn-secondary" href="{{ path('quiz_show', {'id': quiz.id}) }}"><i class="fas fa-eye"></i> {{'show'|trans}} </a>
+                    {% if is_granted('ROLE_ADMIN') %}<a class="btn btn-warning" href="{{ path('quiz_edit', {'id': quiz.id}) }}"> <i class="fas fa-edit"></i> {{'edit'|trans}} </a>{% endif %}
+                    {% if is_granted('ROLE_SUPER_ADMIN') %}<a class="btn btn-danger" href="{{ path('quiz_delete', {'id': quiz.id}) }}"> <i class="fas fa-trash-alt"></i> {{ 'Delete'|trans }} </a>{% endif %}
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="8">no records found</td>
+                <td colspan="8">{{'no records found'|trans}}</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a href="{{ path('quiz_new') }}">Create new</a>
+    <a href="{{ path('quiz_new') }}">{{'Create new'|trans}}</a>
 {% endblock %}
