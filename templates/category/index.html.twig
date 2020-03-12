@@ -11,6 +11,7 @@
                 <th>Id</th>
                 <th>{{ 'Shortname'|trans }}</th>
                 <th>{{ 'Longname'|trans }}</th>
+                <th>{{ 'Quiz'|trans }}</th>
                 <th>{{ 'action'|trans }}</th>
             </tr>
         </thead>
@@ -20,6 +21,10 @@
                 <td>{{ category.id }}</td>
                 <td>{{ category.shortname }}</td>
                 <td>{{ category.longname }}</td>
+
+                {% for quiz in category.quizzes %}
+                    <td>{{ quiz.title }}</td>
+                {% endfor %}
                 
                 <td>
                     <a class="btn btn-secondary" href="{{ path('category_show', {'id': category.id}) }}"><i class="fas fa-eye"></i>  {{ 'Show'|trans }}</a>

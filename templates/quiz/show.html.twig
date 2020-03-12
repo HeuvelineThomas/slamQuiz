@@ -27,6 +27,13 @@
                 <th>{{'Active'|trans}}</th>
                 <td>{{ quiz.active ? 'Yes' : 'No' }}</td>
             </tr>
+            <tr>
+                <th>{{'Categories'|trans}}</th>
+                {% for category in quiz.categories %}
+                    <td>{{ category.longname }}</td>
+                {% endfor %}
+                
+            </tr>
         </tbody>
     </table>
 

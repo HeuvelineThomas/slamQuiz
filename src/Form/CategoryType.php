@@ -13,9 +13,14 @@ class CategoryType extends AbstractType
     {
         $builder
             ->add('shortname')
-            ->add('quizzes')
             // ->add('longname')
         ;
+
+        $builder->add('quizzes', EntityType::class, array(
+            'class' => Quiz::class,
+            'choice_label' => 'title',
+            'multiple' => true
+        ));
     }
 
     public function configureOptions(OptionsResolver $resolver)
